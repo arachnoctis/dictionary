@@ -1,0 +1,57 @@
+{
+  "permutations": {
+    "ジャンル": "未分類",
+    "説明": "順列（並び順をすべて出す）",
+    "例": "from itertools import permutations\nlist(permutations([1,2,3]))"
+  },
+  "combinations": {
+    "ジャンル": "itertools",
+    "説明": "組み合わせ（順番は関係ない）",
+    "例": "from itertools import combinations\nlist(combinations([1,2,3], 2))"
+  },
+  "product": {
+    "ジャンル": "itertools",
+    "説明": "直積（全ての要素の組み合わせ）",
+    "例": "from itertools import product\nlist(product([0,1], repeat=2))"
+  },
+  "zip": {
+    "ジャンル": "組込み関数",
+    "説明": "複数のリストを並列に処理",
+    "例": "for a, b in zip([1,2], ['a','b']):\n    print(a, b)"
+  },
+  "enumerate": {
+    "ジャンル": "組込み関数",
+    "説明": "リストの要素とインデックスを同時に取得",
+    "例": "for i, val in enumerate(['a','b']):\n    print(i, val)"
+  },
+  "read_csv": {
+    "ジャンル": "pandas",
+    "説明": "CSVファイルをDataFrameとして読み込む",
+    "例": "import pandas as pd\ndf = pd.read_csv('data.csv')"
+  },
+  "plot": {
+    "ジャンル": "matplotlib",
+    "説明": "折れ線グラフなどを描画する基本関数",
+    "例": "import matplotlib.pyplot as plt\nplt.plot([1,2,3], [4,5,6])\nplt.show()"
+  },
+  "array": {
+    "ジャンル": "numpy",
+    "説明": "数値計算やベクトル処理に使う配列型",
+    "例": "import numpy as np\na = np.array([1,2,3])"
+  },
+  "st.write": {
+    "ジャンル": "Streamlit",
+    "説明": "テキストや変数などを画面に出力",
+    "例": "import streamlit as st\nst.write('Hello, Streamlit')"
+  },
+  "datetime": {
+    "ジャンル": "標準ライブラリ",
+    "説明": "日付や時間の操作ができる",
+    "例": "import datetime\ntoday = datetime.date.today()"
+  },
+  "open": {
+    "ジャンル": "ファイル操作",
+    "説明": "ファイルの読み書きに使う基本関数",
+    "例": "with open('file.txt', 'r') as f:\n    content = f.read()"
+  }
+}
