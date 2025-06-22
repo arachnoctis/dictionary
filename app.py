@@ -97,7 +97,7 @@ with st.expander("➕ 新しい言葉を追加"):
         key = st.text_input("🔑 キーワード")
         explanation = st.text_area("📖 説明")
         example = st.text_area("💻 例（Pythonコード）")
-        genre = st.selectbox("📁 ジャンル", ["未分類", "標準", "itertools", "pandas"])
+        genre = st.text_input("📁 ジャンル（例: itertools, pandas, numpy など）", value="未分類")
         submitted = st.form_submit_button("登録")
 
     if submitted:
